@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body ng-app>
+    <!-- 
+        - Angular js là một framework của javascript mạnh mẽ được phất triển bởi 
+        google giúp xây dựng một ứng dụng web SPA hoàn chỉnh
+        Được phát triển từ năm 2009
+    -->
+    <!-- 
+        - Các thành phần của angular js 
+        - data binding, MVC, routing, testing, jqlite,Teamplates,history,factor
+        - ViewModel Controller Views Directive Services Dependency Injection Validation
+    -->
+    <!-- 
+        - Data binding đó là tự động đồng bộ dữ liệu giữa model và view
+        - Scope - là đối tượng có khả năng truy cập các model. Scope như một chất keo
+          controllers và view nó giúp controller và view có thể liên kết với nhau
+        - Controller đây là những chức năng js được liên kết với một view cụ thể
+        - Services Angular js đi kèm với một số dịnh vụ được xây dựng ví dụ: $http để thực hiện
+          một XMLHttpRequest. Đây là một đối tượng singleton mà được khởi tạo một làn duy nhất trong ứng dụng
+        - Filter Filter giống như một bộ lọc,format lại dữ liệu gốc sau đó hiển thị ra ngoài view người dùng
+        - Directives Cho Phéo mở rộng html theo ý của bạn có thể tùy chỉnh lại các thuộc tính phần tử
+        - Teamplates là một file xây dựng bằng html. Nó được gọi từ thông tin của controller
+          và model. Teamplates có thẻ là một file giống như index. html hoặc là nhiều file khác nhau
+          sử dụng một page chúng ta vẫn thường gọi là partials
+     -->
+     <!-- ------------------------------------------------------------------------ -->
+     Input name: <input type="text" ng-model="name">
+     Display: <div>{{name}}</div>
+     <script src="/lib/angular.js"></script>
+</body>
+</html>
