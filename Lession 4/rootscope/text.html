@@ -1,0 +1,6 @@
+- Biến rootScope là một biến tổng quát bao hàm toàn bộ các controller của ứng dụng
+- tất cả các ứng dụng đều có một $rootScope là nó được tạo khi khai báo một phần tử HTML có thuộc tính là ng-app
+- trong angular js hỗ trợ các controller lồng nhau nên cũng sẽ có scope lồng nhau
+- Biến được khai báo ở scope của controller bên ngoài cũng sẽ được gán cho biến cùng tên ở scope của controller bên trong
+- Tuy nhiên giá trị của biến ở controller bên trong hoàn toàn có thể ghi đè của controller bên ngoài
+- khi thực thi sẽ thực thi controller bên ngoài trước

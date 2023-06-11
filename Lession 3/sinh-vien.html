@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body ng-controller="myController">
+
+    Name : <input type="text" class="form-control" ng-model="sinhVien.name">
+    Age : <input type="text" class="form-control" ng-model="sinhVien.age">
+    Gender : <input type="text" class="form-control" ng-model="sinhVien.gender">
+    Address : <input type="text" class="form-control" ng-model="sinhVien.address.city">
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{sinhVien.name}}</td>
+            <td>{{sinhVien.age}}</td>
+            <td>{{sinhVien.gender}}</td>
+            <td>{{sinhVien.address.city}}</td>
+          </tr>
+        </tbody>
+      </table>
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/js/bootstrap.js"></script>
+    <script src="sinh-vien.js"></script>
+</body>
+</html>
