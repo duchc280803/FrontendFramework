@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Module là gì?
+            - Một module là một container cho các thành phần khác nhau của ứng dụng như fileters
+              controllers,services,diẻctives
+            - Bạn tưởng tượng một module như một hàm Main của các loại ứng dụng khác
+        Cách tạo một module
+            - Sử Dụng phương thức module() của đối tượng angular để tạo một module
+                                var myApp = angular.module('myApp', []')
+        Controller là gì?
+            - trong angular thì controller là một hàm javaScript tác dụng của nó xây dụng lên model để cho view hiển thị
+        Cách tạo một controller 
+                                myApp.controller('myController',myController);
+     -->
+     <div ng-controller="myController">
+            {{message}}
+     </div>
+     <script src="/lib/angular.js"></script>
+     <script>
+        // create a module
+        var myApp = angular.module('myModule',[])
+
+        myApp.controller('myController',function($scope){
+            $scope.message = 'myController';
+        });
+
+        // function myController($scope) {
+        //     $scope.message = 'myController';
+        // }
+     </script>
+</body>
+</html>
