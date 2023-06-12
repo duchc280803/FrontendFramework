@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/lib/css/bootstrap.css" />
+    <title>Document</title>
+  </head>
+  <body ng-app="demo">
+    <div ng-controller="myController">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Likes</th>
+            <th scope="col">Dislikes</th>
+            <th scope="col">Minus</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="technology in technologies">
+            <td>{{technology.Name}}</td>
+            <td>{{technology.Likes}}</td>
+            <td>{{technology.Dislikes}}</td>
+            <td>{{technology.Minus}}</td>
+            <td>
+              <button
+                ng-click="increaseLike(technology)"
+                class="btn btn-danger">
+                Like
+              </button>
+              <button
+                ng-click="increaseDislike(technology)"
+                class="btn btn-danger">
+                Dislike
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/js/bootstrap.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
